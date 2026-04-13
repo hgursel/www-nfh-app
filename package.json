@@ -1,0 +1,12 @@
+{
+  "name": "www-nfh-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node src/build.js",
+    "clean": "rm -rf public"
+  },
+  "dependencies": {
+    "marked": "^15.0.0"
+  }
+}
