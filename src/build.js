@@ -35,9 +35,6 @@ const humanHtml = `<!DOCTYPE html>
 <body>
   <a href="/" class="back-link">&larr; back</a>
   ${contentHtml}
-  <div class="footer">
-    <a href="https://github.com/hgursel/news-nfh-app">GitHub</a>
-  </div>
 </body>
 </html>`;
 fs.writeFileSync(path.join(PUBLIC, 'human', 'index.html'), humanHtml);

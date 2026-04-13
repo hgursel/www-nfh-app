@@ -182,3 +182,51 @@ li {
     text-align: center;
   }
 }
+
+/* Dark mode — auto-detects OS preference */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #111;
+    color: #e0e0e0;
+  }
+
+  a {
+    color: #e0e0e0;
+  }
+
+  code {
+    background: #1a1a1a;
+  }
+
+  pre {
+    background: #1a1a1a;
+    border-color: #333;
+  }
+
+  th {
+    border-bottom-color: #e0e0e0;
+  }
+
+  td {
+    border-bottom-color: #333;
+  }
+
+  .landing .tagline {
+    color: #999;
+  }
+
+  .btn {
+    border-color: #e0e0e0;
+    color: #e0e0e0;
+    background: #111;
+  }
+
+  .btn:hover {
+    background: #e0e0e0;
+    color: #111;
+  }
+
+  .back-link {
+    color: #999;
+  }
+}
