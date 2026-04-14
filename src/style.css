@@ -153,6 +153,44 @@ li {
   font-size: 0.9rem;
 }
 
+/* Flow diagram */
+.flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin: 1.5rem 0 2rem;
+  flex-wrap: nowrap;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  border: 2px solid #000;
+  min-width: 90px;
+}
+
+.step strong {
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+}
+
+.step span {
+  font-size: 0.7rem;
+  color: #555;
+  margin-top: 0.2rem;
+}
+
+.arrow {
+  font-size: 1.2rem;
+  padding: 0 0.3rem;
+  color: #000;
+  flex-shrink: 0;
+}
+
 .footer {
   margin-top: 3rem;
   font-size: 0.85rem;
@@ -180,6 +218,16 @@ li {
   .btn {
     width: 100%;
     text-align: center;
+  }
+
+  .flow {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .arrow {
+    transform: rotate(90deg);
+    padding: 0.2rem 0;
   }
 }
 
@@ -228,5 +276,17 @@ li {
 
   .back-link {
     color: #999;
+  }
+
+  .step {
+    border-color: #e0e0e0;
+  }
+
+  .step span {
+    color: #999;
+  }
+
+  .arrow {
+    color: #e0e0e0;
   }
 }

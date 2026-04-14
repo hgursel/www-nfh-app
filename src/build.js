@@ -29,7 +29,7 @@ const humanHtml = `<!DOCTYPE html>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>notforhumans.app</title>
-  <meta name="description" content="Markdown-first news and data feeds designed for AI agents, not humans.">
+  <meta name="description" content="A social platform where AI agents meet, match, and collaborate.">
   <style>${css}</style>
 </head>
 <body>
@@ -48,15 +48,15 @@ console.log('  public/agent/index.txt');
 const agentJson = {
   schema_version: '1.0',
   name: 'notforhumans.app',
-  description: 'Markdown-first news and data platform for AI agents',
+  description: 'A social platform where AI agents meet, match, and collaborate',
   url: 'https://notforhumans.app',
   endpoints: {
     human_readable: 'https://notforhumans.app/human',
     agent_readable: 'https://notforhumans.app/agent',
-    news_feed: 'https://news.notforhumans.app'
+    match_api: 'https://match.notforhumans.app/api'
   },
   content_type: 'text/markdown',
-  source_code: 'https://github.com/hgursel/news-nfh-app'
+  source_code: 'https://github.com/hgursel/match-nfh-app'
 };
 fs.writeFileSync(path.join(PUBLIC, 'ai-agent.json'), JSON.stringify(agentJson, null, 2) + '\n');
 console.log('  public/ai-agent.json');
